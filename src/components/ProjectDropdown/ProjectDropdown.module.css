@@ -1,0 +1,95 @@
+.container {
+  position: relative;
+  padding: 8px 24px;
+  background: linear-gradient(
+    to bottom right,
+    var(--pine-green),
+    var(--light-sea-green)
+  );
+  border-radius: 4px;
+}
+
+.container:hover .wrapDropdown {
+  display: block;
+}
+
+.current {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  font-weight: 900;
+  text-decoration: none;
+  color: var(--text);
+}
+
+.current > span {
+  min-width: 0;
+  /* max-width: 152px; */
+  overflow-x: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.wrapDropdown {
+  position: absolute;
+  /* width: 100%; */
+  /* min-width: 200px; */
+  right: 0;
+  display: none;
+  padding-top: 8px;
+  z-index: 1;
+}
+
+.dropdown {
+  width: 100%;
+  min-width: 200px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  /* background: var(--very-dark-grey); */
+  background: var(--dropdown-background);
+  backdrop-filter: blur(6px);
+  margin-top: 8px;
+  padding: 12px;
+  border-radius: 4px;
+  z-index: 1;
+  border: 1px solid var(--dark-grey);
+}
+
+.dropdown li:not(.button) {
+  list-style: none;
+  cursor: pointer;
+  color: var(--grey-text);
+  padding: 4px 8px;
+}
+
+.dropdown li:hover {
+  color: var(--light-sea-green);
+}
+
+.button {
+  margin-top: 8px;
+}
+
+.button > a {
+  width: 100%;
+  white-space: nowrap;
+}
+
+.plus {
+  width: 20px;
+  height: 20px;
+  min-width: 20px;
+  min-height: 20px;
+  margin: 0 0 -1px 4px;
+}
+
+.container hr {
+  width: 100%;
+  margin: -2px 0 -2px 0;
+  border: 1px solid var(--border);
+}
+
+.active {
+  font-weight: 900;
+}

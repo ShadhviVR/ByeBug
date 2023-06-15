@@ -1,0 +1,17 @@
+.container {
+  /* overflow-x: hidden; */
+  width: 100vw;
+  display: flex;
+  position: relative;
+  width: 100%;
+  padding: env(safe-area-inset-top) env(safe-area-inset-right)
+    env(safe-area-inset-bottom) env(safe-area-inset-left);
+}
+
+.content {
+  position: relative;
+  top: var(--header-height);
+  width: 100%;
+  min-height: calc(200vh - var(--header-height));
+  /* display: flex; */
+}

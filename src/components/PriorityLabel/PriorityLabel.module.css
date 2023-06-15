@@ -1,0 +1,32 @@
+.container {
+  border-radius: 5px;
+  padding: 2px 5px 2px 5px;
+  color: white;
+  font-weight: bold;
+  margin: 0 5px 0 5px;
+  width: 64px;
+  min-width: 64px;
+  text-align: center;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+.low {
+  background: var(--low-priority-background);
+  border: 1px solid rgb(139, 195, 74);
+}
+
+.medium {
+  background: var(--medium-priority-background);
+  border: 1px solid rgb(253, 216, 53);
+}
+
+.high {
+  background: var(--high-priority-background);
+  border: 1px solid rgb(255, 167, 38);
+}
+
+.critical {
+  background: var(--critical-priority-background);
+  border: 1px solid rgb(239, 83, 80);
+}

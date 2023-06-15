@@ -1,0 +1,37 @@
+.container {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  border: none;
+  border-radius: 5px;
+  padding: 8px;
+  background: rgba(70, 70, 70, 0.8);
+  cursor: pointer;
+  /* margin: 8px 0; */
+  /* margin: 2px; */
+  /* box-shadow: 0 5px 6px -4px rgba(0, 0, 0, 0.4); */
+}
+
+.active {
+  background: rgb(221, 236, 255);
+}
+
+.container > span {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  margin: 0 8px 0 4px;
+}
+
+.container > span {
+  font-weight: 800;
+}
+
+.link {
+  color: var(--light-grey-text);
+}
+
+.dragging {
+  background: rgba(13, 77, 68, 0.8);
+  /* box-shadow: 0 0 5px 5px var(--drag-box-shadow); */
+}
